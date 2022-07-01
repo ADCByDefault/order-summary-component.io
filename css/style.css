@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+    /* ### Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+    padding: 2rem;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    border-radius: 1.3rem;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgb(203, 194, 243);
+}
+
+.card .hero-img {
+    width: 100%;
+}
+
+.card-functional {
+    padding: 1rem;
+    color: var(--Desaturated-blue);
+}
+
+.card-functional h1 {
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.card-functional .description {
+    font-weight: 500;
+}
+
+.card-functional .prize-container {
+    background-color: var(--Very-pale-blue);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-functional .prize-container .music-icon {
+    width: 40px;
+}
+
+.card-functional .prize-container .subscription-prize {
+    margin-left: -2.5rem;
+}
+
+.card-functional .prize-container .subscription-prize h2 {
+    color: var(--Dark-blue);
+    font-size: 0.85rem;
+    font-weight: 900;
+    margin: 0 0 0.15rem 0;
+}
+
+.card-functional .prize-container .subscription-prize p {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.card-functional .prize-container a {
+    color: var(--Bright-blue);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.card-functional .prize-container a:hover {
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+.card-functional .pay,
+.card-functional .cancel {
+    color: var(--Very-pale-blue);
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.65rem;
+}
+
+.card-functional .pay {
+    color: var(--Pale-blue);
+    background-color: var(--Bright-blue);
+    margin-top: 1.5rem;
+    box-shadow: 0 15px 20px rgb(213, 208, 239);
+}
+
+.card-functional .pay:hover {
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.card-functional .cancel {
+    color: var(--Desaturated-blue);
+    background-color: transparent;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-functional .cancel:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
